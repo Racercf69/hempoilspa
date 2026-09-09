@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Hemp Oil Spa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="index.html"><div class="mark">H</div><div class="brand-name">Hemp Oil Spa<span>CBD Topicals</span></div></a>
+    <nav class="nav-links">
+      <a href="shop.html">Shop</a><a href="rituals.html">Rituals</a><a href="about.html">The House</a><a href="contact.html">Contact</a>
+    </nav>
+    <button class="burger">Menu</button>
+  </header>
+  <div class="page-hero">
+    <div class="wrap">
+      <p class="eyebrow">Retail · wholesale · white label</p>
+      <h1>Request product.</h1>
+    </div>
+  </div>
+  <section>
+    <div class="wrap form-grid">
+      <div>
+        <h2>Tell us what you need</h2>
+        <p class="muted" style="margin-top:12px;">Retail orders, spa wholesale, sample kits, and private-label conversations. We reply from hello@hempoilspa.com.</p>
+      </div>
+      <form data-form name="product-request" method="POST">
+        <div class="field"><label for="name">Name</label><input id="name" name="name" required /></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required /></div>
+        <div class="field"><label for="intent">I am looking for</label>
+          <select id="intent" name="intent">
+            <option>Retail order / restock</option>
+            <option>Spa or studio wholesale</option>
+            <option>White-label / private label</option>
+            <option>Sample kit</option>
+          </select>
+        </div>
+        <div class="field"><label for="message">Notes</label><textarea id="message" name="message"></textarea></div>
+        <button class="btn btn-dark" type="submit">Send request</button>
+        <div class="success">Received. We will answer from hello@hempoilspa.com.</div>
+      </form>
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
